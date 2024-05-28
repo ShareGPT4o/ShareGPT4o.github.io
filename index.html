@@ -493,80 +493,85 @@
 
     <script>
       // Handle message showing
-      function createChatRow(sender, text, imageSrc) {
+      function createChatRow(sender, text, mediaSrc) {
         var article = document.createElement("article");
-        article.className = "media"
-
+        article.className = "media";
+      
         var figure = document.createElement("figure");
         figure.className = "media-left";
-
+      
         var span = document.createElement("span");
         span.className = "icon is-large";
-
+      
         var icon = document.createElement("i");
         var img = document.createElement("img");
-
+      
         if (sender === "User") {
-          img.src = "images/user.png"
+          img.src = "images/user.png";
         }
         else if (sender === "ShareGPT4o") {
-          img.src = "images/logo.jpg"
-        }
-        else if (sender === "ShareGPT4o") {
-          img.src = "images/logo.jpg"
+          img.src = "images/logo.jpg";
         }
         else {
-          img.src = "images/captioner.png"
+          img.src = "images/captioner.png";
         }
         icon.appendChild(img);
-
+      
         var media = document.createElement("div");
         media.className = "media-content";
-
+      
         var content = document.createElement("div");
         content.className = "content";
-
+      
         var para = document.createElement("p");
-
+      
         // wrap text in pre tag to preserve whitespace and line breaks
         var pre_text = document.createElement("pre");
         pre_text.style = "background-color: white; font-size: 18px; font-family: Arial; padding: 0; margin: 0; white-space: pre-wrap; word-wrap: break-word;";
         var paraText = document.createTextNode(text);
         pre_text.appendChild(paraText);
-
+      
         var strong = document.createElement("strong");
         strong.innerHTML = sender;
         var br = document.createElement("br");
-
+      
         para.appendChild(strong);
         para.appendChild(br);
         para.appendChild(pre_text);
-
-        if (imageSrc) {
-          var img = document.createElement("img");
-          img.src = imageSrc;
-          img.style = "max-width: 100%; max-height: 300px;"; // Adjust the style as needed
-          para.appendChild(img);
+      
+        if (mediaSrc) {
+          if (mediaSrc.endsWith(".jpg") || mediaSrc.endsWith(".png")) {
+            var img = document.createElement("img");
+            img.src = mediaSrc;
+            img.style = "max-width: 100%; max-height: 300px;"; // Adjust the style as needed
+            para.appendChild(img);
+          } else if (mediaSrc.endsWith(".mp4")) {
+            var video = document.createElement("video");
+            video.src = mediaSrc;
+            video.controls = true;
+            video.style = "max-width: 100%; max-height: 300px;"; // Adjust the style as needed
+            para.appendChild(video);
+          }
         }
-
+      
         content.appendChild(para);
         media.appendChild(content);
         span.appendChild(icon);
         figure.appendChild(span);
         if (sender !== "Description") {
           article.appendChild(figure);
-        };
+        }
         article.appendChild(media);
         return article;
       }
-
-      function addMessageToChatHistory(sender, message, imageSrc) {
+      
+      function addMessageToChatHistory(sender, message, mediaSrc) {
         const chatHistory = document.querySelector('.chat-history');
-        const chatRow = createChatRow(sender, message, imageSrc);
+        const chatRow = createChatRow(sender, message, mediaSrc);
         chatHistory.appendChild(chatRow);
         chatHistory.scrollTop = chatHistory.scrollHeight;
       }
-
+      
       function clearChatHistory() {
         const chatHistory = document.querySelector('.chat-history');
         chatHistory.innerHTML = "";
