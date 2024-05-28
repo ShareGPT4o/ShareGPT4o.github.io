@@ -139,7 +139,7 @@
               <h1 class="title is-2 publication-title">Improving Large Multi-Modal Models with Better Captions</h1>
               <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://github.com/OpenGVLab" style="color:#f68946;font-weight:normal;">GV Lab Team</a>
+                <a href="https://github.com/OpenGVLab" style="color:#f68946;font-weight:normal;">OpenGVLab</a>
               </span>
               <!--<span class="author-block">
                 <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=j1rq_lYAAAAJ" style="color:#008AD7;font-weight:normal;">Zhe Chen<sup>*</sup></a>,
@@ -219,7 +219,7 @@
       <div class="container is-max-desktop">
         <div class="hero-body">
           <h4 class="subtitle has-text-centered">
-            🔥<span style="color: #ff3860">[NEW!]</span>The <b>ShareGPT4o</b> dataset is available!
+            🔥<span style="color: #ff3860">[NEW!]</span>  The <b>ShareGPT4o</b> dataset is available!
             <!--🔥<span style="color: #ff3860">[NEW!]</span> To further expand the modalities, we have added 10k carefully selected audio data to the dataset, all annotated by GPT-4O.
             <br><br>-->
           </h4>
@@ -365,64 +365,86 @@
                   border-color: #c1c4c5;
                   border-style: solid;
                   color: #000000;
+                  margin-bottom: 20px;
                 }
                 
                 table.GeneratedTable td, table.GeneratedTable th {
                   border-width: 2px;
                   border-color: #9b9d9e;
                   border-style: solid;
-                  padding: 3px;
+                  padding: 10px;
                 }
                 
                 table.GeneratedTable thead {
                   background-color: #6691ee;
+                  color: white;
+                }
+                
+                .table-container {
+                  margin-bottom: 20px;
                 }
               </style>
               <div class="column is-six-fifths" width="80%">
-              <table class="GeneratedTable">
-                <thead>
-                  <tr>
-                    <th>Version</th>
-                    <th>Domain</th>
-                    <th>Released</th>
-                    <th>Samples</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>v1.0</td>
-                    <td>Image,Video</td>
-                    <td>✔︎</td>
-                    <td>50k+2k</td>
-                  </tr>
-                  <tr>
-                    <td>v1.1</td>
-                    <td>Image,Video,Audio</td>
-                    <td>✗</td>
-                    <td>100k+5k+2k</td>
-                  </tr>
-                  <tr>
-                    <td>v1.2</td>
-                    <td>Image,Video,Audio</td>
-                    <td>✗</td>
-                    <td>200k+10k+10k</td>
-                  </tr>
-                  <tr>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>✗</td>
-                    <td>...</td>
-                  </tr>
-                  <!--<tr bgcolor="#a4cff4">
-                    <td>ShareGPT4o</td>
-                    <td>Image, Video, Audio(coming soon)</td>
-                    <td>✔︎</td>
-                    <td>GPT-4o</td>
-                    <td>200k+10k+10k</td>
-                  </tr>-->
-                </tbody>
-              </table>
+                <h3 class="title is-4 has-text-centered">ShareGPT4o_v1.0</h3>
+                <div class="table-container">
+                  <table class="GeneratedTable">
+                    <thead>
+                      <tr>
+                        <th>Domain</th>
+                        <th>Source Document</th>
+                        <th>Caption Document</th>
+                        <th>Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Image</td>
+                        <td>images.zip</td>
+                        <td>images_conversations</td>
+                        <td>
+                          The <code>images.zip</code> file contains 50k images. The <code>images_conversations</code> file includes a JSONL file annotated with captions by GPT-4o. Each element in the JSONL file is formatted as follows:
+                          <pre>
+    {
+      "image": "image_id.jpg",
+      "width": ,
+      "height": ,
+      "conversations": [
+        {"from": "human", "value": "&lt;image&gt;\n+prompt"},
+        {"from": "gpt", "value": "caption"}
+      ]
+    }
+                          </pre>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Video</td>
+                        <td>videos.zip</td>
+                        <td>videos_conversations</td>
+                        <td>
+                          The <code>videos.zip</code> file contains 2k videos. The <code>videos_conversations</code> file includes a JSONL file annotated with captions by GPT-4o. Each element in the JSONL file is formatted as follows:
+                          <pre>
+    {
+      "video": "video_id.mp4",
+      "width": ,
+      "height": ,
+      "conversations": [
+        {"from": "human", "value": "&lt;video&gt;\n+prompt"},
+        {"from": "gpt", "value": "caption"}
+      ]
+    }
+                          </pre>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    
 
 <!--
     <section class="section" id="Performance">
