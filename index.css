@@ -1,3 +1,13 @@
+html {
+  font-size: 18px; /* 你可以根据需要调整这个值 */
+}
+
+/* 调整页面的缩放比例 */
+body {
+  transform: scale(1.2); /* 你可以根据需要调整这个值 */
+  transform-origin: 0 0; /* 保持页面左上角为原点进行缩放 */
+}
+
 body {
   font-family: 'Noto Sans', sans-serif;
 }
