@@ -137,7 +137,6 @@
             <div class="column has-text-centered">
               <h1 class="title is-1 publication-title"><img id="logo" width="5%" src="images/logo.jpg"> ShareGPT4o:</h1>
               <h1 class="title is-2 publication-title">Improving Large Multi-Modal Models with Better Captions</h1>
-              <!-- <h5 class="subtitle is-5 publication-awards">NeurIPS 2023 (Oral)</h5> -->
               <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://github.com/OpenGVLab" style="color:#f68946;font-weight:normal;">GV Lab Team</a>
@@ -220,12 +219,10 @@
       <div class="container is-max-desktop">
         <div class="hero-body">
           <h4 class="subtitle has-text-centered">
-            🔥<span style="color: #ff3860">[NEW!]</span> To further expand the modalities, we have added 10k carefully selected <b>video</b> data to the dataset, all annotated by GPT-4o.Stay tuned for <b>audio</b> data captions coming soon!
+            🔥<span style="color: #ff3860">[NEW!]</span> we have added 2k carefully selected <b>video</b> data to the dataset.
             <br><br>
             <!--🔥<span style="color: #ff3860">[NEW!]</span> To further expand the modalities, we have added 10k carefully selected audio data to the dataset, all annotated by GPT-4O.
             <br><br>-->
-            We have open-sourced a comprehensive multimodal dataset named ShareGPT4o, meticulously annotated by GPT-4o, the most advanced multimodal large language model currently available. 
-            This dataset comprises 50k carefully curated images, each labeled to enhance the model's image understanding capabilities. Utilizing this dataset can significantly improve the performance and accuracy of models in tasks involving image comprehension.
           </h4>
         </div>
       </div>
@@ -238,9 +235,9 @@
             <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                In the realm of large multimodal models (LMMs), achieving efficient modality alignment is a critical challenge, often hindered by the scarcity of high-quality image-text and video-text data. To address this issue, we introduce the ShareGPT4o dataset, a groundbreaking large-scale resource that includes 50K meticulously annotated images and 10K videos with highly descriptive captions. 
-                This dataset sets a new standard in diversity and informational richness, encompassing extensive world knowledge, detailed object properties, spatial relationships, and aesthetic evaluations. ShareGPT4o capitalizes on the advanced multimodal capabilities of GPT-4o, ensuring each data point is carefully curated for maximum utility.
-                By releasing this dataset, we aim to provide a pivotal resource that will significantly advance the progress of the LMM community, facilitating more effective modality alignment and enhancing the overall performance of multimodal models.
+                In the realm of large multimodal models (LMMs), achieving efficient modality alignment is a critical challenge, often hindered by the scarcity of high-quality image-text, video-text data and audio-text data. 
+                To address this issue, we introduce the ShareGPT4o dataset, a groundbreaking large-scale resource that we plan to open-source with 200K meticulously annotated images, 10K videos with highly descriptive captions, and 10K audio files with detailed descriptions. 
+                This dataset sets a new standard in diversity and informational richness, encompassing extensive world knowledge, detailed object properties, spatial relationships, and aesthetic evaluations. ShareGPT4o leverages the advanced multimodal capabilities of GPT-4o, ensuring each data point is carefully curated for maximum utility. By releasing this dataset, we aim to provide a pivotal resource that will significantly advance the progress of the LMM community, facilitating more effective modality alignment and enhancing the overall performance of multimodal models.
               </p>
             </div>
           </div>
@@ -251,7 +248,7 @@
     <section class="section" id="ShareGPT4o">
       <div class="columns is-centered has-text-centered">
         <div class="column is-six-fifths">
-          <h2 class="title is-3"><img id="logo" width="3%" src="images/logo.jpg"> ShareGPT4o Dataset (60K)</h2>
+          <h2 class="title is-3"><img id="logo" width="3%" src="images/logo.jpg"> ShareGPT4o Dataset</h2>
         </div>
       </div>
       <div class="container is-max-desktop">
@@ -325,15 +322,13 @@
                     <td>Image, Video, Audio(coming soon)</td>
                     <td>✔︎</td>
                     <td>GPT-4o</td>
-                    <td>50k+10k</td>
+                    <td>200k+10k+10k</td>
                   </tr>
                 </tbody>
               </table>
-              <p style="font-family:Times New Roman">
-                <font size=4>
+              <p style="font-family: Times New Roman; font-size: 1.25em; text-align: center;">
                 <b>Comparison of widely-used caption datasets and ShareGPT4o.</b>
-                </font>
-              </p>               
+              </p>            
               </div>
               <font color="#224baf" size=4><b>
               <p>
@@ -351,40 +346,85 @@
         </div>
       </div>
     </section>
-<!--
-    <section class="section" id="ShareGPT4V-PT">
+
+    <section class="section" id="ShareGPT4o-version">
       <div class="columns is-centered has-text-centered">
         <div class="column is-six-fifths">
-          <h2 class="title is-3"><img id="logo" width="3%" src="images/logo.png"> ShareGPT4V-PT Dataset (1.2M)</h2>
+          <h2 class="title is-3"><img id="logo" width="3%" src="images/logo.jpg"> ShareGPT4o-Version</h2>
         </div>
       </div>
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column is-full-width">
-            <font color="#224baf" size=4><b>
             <div class="content has-text-justified">
-              <p>
-                We delineate the process of utilizing the seed captions to train a general captioner (Share-Captioner)
-                and then employing this captioner to generate <b>1.2M high-quality captions</b> for pre-training usage.
-                <centering>
-                  <div style="text-align: center;">
-                    <img id="teaser" width="100%" src="images/datasource_b.png">     
-                  </div>
-                </centering>
-                A qualitative comparison of caption quality from various sources:
-                <centering>
-                  <div style="text-align: center;">
-                    <img id="teaser" width="100%" src="images/compare_b.png">     
-                  </div>
-                </centering>
-              </p>
-            </div>
-            </b></font>
-          </div>
-        </div>
-      </div>
+              <style>
+                table.GeneratedTable {
+                  width: 100%;
+                  background-color: #ffffff;
+                  border-collapse: collapse;
+                  border-width: 2px;
+                  border-color: #c1c4c5;
+                  border-style: solid;
+                  color: #000000;
+                }
+                
+                table.GeneratedTable td, table.GeneratedTable th {
+                  border-width: 2px;
+                  border-color: #9b9d9e;
+                  border-style: solid;
+                  padding: 3px;
+                }
+                
+                table.GeneratedTable thead {
+                  background-color: #6691ee;
+                }
+              </style>
+              <div class="column is-six-fifths" width="80%">
+              <table class="GeneratedTable">
+                <thead>
+                  <tr>
+                    <th>Version</th>
+                    <th>Domain</th>
+                    <th>Released</th>
+                    <th>Samples</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>v1.0</td>
+                    <td>Image,Video</td>
+                    <td>✔︎</td>
+                    <td>50k+2k</td>
+                  </tr>
+                  <tr>
+                    <td>v1.1</td>
+                    <td>Image,Video,Audio</td>
+                    <td>✗</td>
+                    <td>100k+5k+2k</td>
+                  </tr>
+                  <tr>
+                    <td>v1.2</td>
+                    <td>Image,Video,Audio</td>
+                    <td>✗</td>
+                    <td>200k+10k+10k</td>
+                  </tr>
+                  <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>✗</td>
+                    <td>...</td>
+                  </tr>
+                  <!--<tr bgcolor="#a4cff4">
+                    <td>ShareGPT4o</td>
+                    <td>Image, Video, Audio(coming soon)</td>
+                    <td>✔︎</td>
+                    <td>GPT-4o</td>
+                    <td>200k+10k+10k</td>
+                  </tr>-->
+                </tbody>
+              </table>
     </section>
--->
+
 <!--
     <section class="section" id="Performance">
       <div class="columns is-centered has-text-centered">
@@ -422,7 +462,7 @@
     <section class="section" style="background-color:#efeff081" id="examples">
       <div class="columns is-centered has-text-centered">
         <div class="column is-six-fifths">
-          <h2 class="title is-3">Captioning Examples</h2>
+          <h2 class="title is-3">Captioning  Examples</h2>
         </div>
       </div>
       <div class="container mt-5">
@@ -579,6 +619,26 @@
 
       const conversations = [
       {
+        "description": "Video-caption",
+        "turns": [
+          ["User", "", "images/examples/case_4.mp4"],
+          ["User", "Describe this video and its style to generate a description."],
+          ["ShareGPT4o",
+            "The video features a wide, straight pathway lined with bare trees, their branches dusted with snow, leading towards an elegant building in the background, which adds an air of grandeur to the scene. The ground is covered in a pristine layer of snow, undisturbed except for the path which has been cleared for foot traffic. Park benches and lampposts intermittently line the path, and a delicate snowfall contributes to the winter wonderland aesthetic. Throughout the video, various individuals are seen engaging with the environment, primarily focused on a runner wearing a bright yellow sports jacket with 'erima' printed on the back, providing a vivid contrast to the muted tones of the winter setting. The runner moves steadily down the pathway, maintaining a consistent pace, indicative of a routine exercise regime. As the runner advances, other park-goers can be seen in the background, including distant figures who appear to be walking or cycling, enjoying the outdoor space despite the cold weather."  
+          ]
+        ]
+      },
+      {
+        "description": "Video-caption",
+        "turns": [
+          ["User", "", "images/examples/case_5.mp4"],
+          ["User", "Generate video descriptions that include details of visual effects, character actions, and movement of people/objects within frames."],
+          ["ShareGPT4o",
+            "In this video, a person's hands are primarily featured, performing actions on a white surface. The person uses a white pen to draw various shapes—namely a circle, a triangle, and a rectangle—on a sheet of folded paper. Each shape is carefully sketched one after the other. A spoon with an orange ping pong ball placed in its bowl is stationary on the white surface, to the left of the paper. Following the drawing, the person places yellow sticky notes over each shape sequentially, completely covering the drawn shapes. The movements are deliberate, showing close-ups of the hands as they manipulate the pen and the sticky notes, emphasizing the process of drawing and covering shapes."  
+          ]
+        ]
+      },
+      {
           "description": "image_caption",
           "turns": [
             ["User", "", "images/examples/case_1.jpg"],
@@ -605,26 +665,6 @@
             ["User", "Write a detailed and comprehensive description of the image."],
             ["ShareGPT4o",
               "The image displays a baked dessert, specifically a cherry clafoutis, which is placed on a frameless wire cooling rack to allow air circulation. The dessert is in a circular, clear glass baking dish. The glass dish allows easy observation of the consistency and the state of the baked item. The edge of the clafoutis is golden-brown and slightly puffed, suggesting a well-baked crust. The center of the dessert is filled with whole cherries, which are dark red and appear juicy, embedded in a custard-like batter. There is a light dusting of powdered sugar on the cherries and the surface of the clafoutis, enhancing its visual appeal. \n\nA hand with red nail polish on the thumb is seen holding a fine-mesh sifter filled with powdered sugar over the dessert, sprinkling additional sugar. The act of sifting the powdered sugar over the dessert helps to create an even coating and adds a sweet, decorative finish. \n\nThe background is a light grey, textured surface, which contrasts with the vibrant colors of the cherry clafoutis. The overall presentation suggests that the dessert is ready to be served, and the addition of the powdered sugar gives a final touch to the dish.\n\nIntegrating relevant knowledge, a cherry clafoutis is a traditional French dessert originating from the Limousin region. It is made by placing cherries in a buttered dish, covering them with a thick, pancake-like batter, and then baking it until set. Cherries are typically used with pits in classic recipes, as they impart a stronger almond-like flavor during baking. However, for convenience and safety, pitted cherries are often used in modern variations. The custard batter, which becomes firm and flan-like upon baking, contrasts pleasantly with the tart sweetness of the cherries. The dusting of powdered sugar not only enhances the sweetness but also gives it a pleasing aesthetic finish.\n\nIn conclusion, the image captures the final preparation stage of a cherry clafoutis, with an emphasis on the texture, color contrast, and the process of adding the final sweet touch through powdered sugar. The visual elements collectively highlight the dessert's appeal and readiness for serving."
-            ]
-          ]
-        },
-        {
-          "description": "Video-caption",
-          "turns": [
-            ["User", "", "images/examples/case_4.mp4"],
-            ["User", "Describe this video and its style to generate a description."],
-            ["ShareGPT4o",
-              "The video features a wide, straight pathway lined with bare trees, their branches dusted with snow, leading towards an elegant building in the background, which adds an air of grandeur to the scene. The ground is covered in a pristine layer of snow, undisturbed except for the path which has been cleared for foot traffic. Park benches and lampposts intermittently line the path, and a delicate snowfall contributes to the winter wonderland aesthetic. Throughout the video, various individuals are seen engaging with the environment, primarily focused on a runner wearing a bright yellow sports jacket with 'erima' printed on the back, providing a vivid contrast to the muted tones of the winter setting. The runner moves steadily down the pathway, maintaining a consistent pace, indicative of a routine exercise regime. As the runner advances, other park-goers can be seen in the background, including distant figures who appear to be walking or cycling, enjoying the outdoor space despite the cold weather."  
-            ]
-          ]
-        },
-        {
-          "description": "Video-caption",
-          "turns": [
-            ["User", "", "images/examples/case_5.mp4"],
-            ["User", "Generate video descriptions that include details of visual effects, character actions, and movement of people/objects within frames."],
-            ["ShareGPT4o",
-              "In this video, a person's hands are primarily featured, performing actions on a white surface. The person uses a white pen to draw various shapes—namely a circle, a triangle, and a rectangle—on a sheet of folded paper. Each shape is carefully sketched one after the other. A spoon with an orange ping pong ball placed in its bowl is stationary on the white surface, to the left of the paper. Following the drawing, the person places yellow sticky notes over each shape sequentially, completely covering the drawn shapes. The movements are deliberate, showing close-ups of the hands as they manipulate the pen and the sticky notes, emphasizing the process of drawing and covering shapes."  
             ]
           ]
         }
