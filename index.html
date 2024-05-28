@@ -171,7 +171,7 @@
 
               <div class="column has-text-centered">
                 <div class="publication-links">
-                  <span class="link-block">
+                  <!--<span class="link-block">
                     <a href="https://arxiv.org/abs/2311.12793" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -179,7 +179,7 @@
                       </span>
                       <span>arXiv</span>
                     </a>
-                  </span>
+                  </span>-->
                   <span class="link-block">
                     <a href="https://github.com/InternLM/InternLM-XComposer/tree/main/projects/ShareGPT4V" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -189,6 +189,7 @@
                       <span>Dataset</span>
                     </a>
                   </span>
+                  <!--
                   <span class="link-block">
                     <a href="https://huggingface.co/spaces/Lin-Chen/ShareGPT4V-7B" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -198,7 +199,7 @@
                       <span>ShareGPT4o Demo</span>
                     </a>
                   </span>
-                  <!--<span class="link-block">
+                  <span class="link-block">
                     <a href="https://huggingface.co/spaces/Lin-Chen/Share-Captioner" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -219,11 +220,11 @@
       <div class="container is-max-desktop">
         <div class="hero-body">
           <h4 class="subtitle has-text-centered">
-            🔥<span style="color: #ff3860">[NEW!]</span> To further expand the modalities, we have added 10k carefully selected video data to the dataset, all annotated by GPT-4O.
+            🔥<span style="color: #ff3860">[NEW!]</span> To further expand the modalities, we have added 10k carefully selected video data to the dataset, all annotated by GPT-4o.
             <br><br>
             <!--🔥<span style="color: #ff3860">[NEW!]</span> To further expand the modalities, we have added 10k carefully selected audio data to the dataset, all annotated by GPT-4O.
             <br><br>-->
-            We have open-sourced a comprehensive multimodal dataset named ShareGPT4o, meticulously annotated by GPT-4O, the most advanced multimodal large language model currently available. 
+            We have open-sourced a comprehensive multimodal dataset named ShareGPT4o, meticulously annotated by GPT-4o, the most advanced multimodal large language model currently available. 
             This dataset comprises 50k carefully curated images, each labeled to enhance the model's image understanding capabilities. Utilizing this dataset can significantly improve the performance and accuracy of models in tasks involving image comprehension.
           </h4>
         </div>
@@ -238,7 +239,7 @@
             <div class="content has-text-justified">
               <p>
                 In the realm of large multimodal models (LMMs), achieving efficient modality alignment is a critical challenge, often hindered by the scarcity of high-quality image-text and video-text data. To address this issue, we introduce the ShareGPT4o dataset, a groundbreaking large-scale resource that includes 50K meticulously annotated images and 10K videos with highly descriptive captions. 
-                This dataset sets a new standard in diversity and informational richness, encompassing extensive world knowledge, detailed object properties, spatial relationships, and aesthetic evaluations. ShareGPT4o capitalizes on the advanced multimodal capabilities of GPT-4O, ensuring each data point is carefully curated for maximum utility.
+                This dataset sets a new standard in diversity and informational richness, encompassing extensive world knowledge, detailed object properties, spatial relationships, and aesthetic evaluations. ShareGPT4o capitalizes on the advanced multimodal capabilities of GPT-4o, ensuring each data point is carefully curated for maximum utility.
                 By releasing this dataset, we aim to provide a pivotal resource that will significantly advance the progress of the LMM community, facilitating more effective modality alignment and enhancing the overall performance of multimodal models.
               </p>
             </div>
@@ -323,7 +324,7 @@
                     <td>ShareGPT4o</td>
                     <td>Image, Video</td>
                     <td>✔︎</td>
-                    <td>GPT-4O</td>
+                    <td>GPT-4o</td>
                     <td>50k+10k</td>
                   </tr>
                 </tbody>
@@ -336,11 +337,11 @@
               </div>
               <font color="#224baf" size=4><b>
               <p>
-                We demonstrated our process of using GPT-4O to generate highly descriptive captions for various types of images and audio based on specific user prompts. 
+                We demonstrated our process of using GPT-4o to generate highly descriptive captions for various types of images and audio based on specific user prompts. 
                 As a result, we obtained 50K image captions and 10K video captions. These captions provide detailed descriptions of the information contained in the images and videos.
                 <centering>
                   <div style="text-align: center;">
-                    <img id="teaser" width="100%" src="images/caption.png">     
+                    <img id="teaser" width="100%" src="images/caption_2.png">     
                   </div>
                 </centering>
               </p>
@@ -578,7 +579,7 @@
             ["User", "", "images/examples/case_1.jpg"],
             ["User", "Please describe the content of the picture."],
             ["ShareGPT4o",
-              "The image shows a market stall displaying an extensive assortment of fresh green vegetables. The vegetables are neatly arranged in an orderly fashion, occupying the entire space of the visible part of the stall. Let's break down the details:\n\n1. **Types of Vegetables**:\n   - **Front Row**: The most prominent vegetables appear to be green leafy ones, likely varieties of bok choy. Bok choy is identifiable by its distinct, rounded dark green leaves and thick white stalks.\n   - **Middle Section**: This section includes bunches of pak choi, which also have green leaves with smaller stalks. Next to these are bundles of Chinese broccoli (kai-lan), distinguishable by their darker, broader leaves.\n   - **Back Section**: The rear part of the stall exhibits bundles of what seem to be water spinach (kangkong), identifiable by its long, slender stems and narrow leaves.\n\n2. **Containers and Display**:\n   - The vegetables are placed in plastic crates and baskets, ensuring they are prominently displayed and accessible to customers. The crates are either white or deep red, which helps in keeping the vegetables separated and organized.\n   - Some vegetables are bundled together with rubber bands or ties, likely for easy purchase and handling.\n\n3. **Surrounding Area**:\n   - Behind the vegetables, there are stacks of other groceries such as potatoes, snacks, and possibly small fruits in plastic bags or containers.\n   - Additional non-leafy vegetables like carrots and what seem to be radishes or turnips are also visible in plastic bags or crates towards the back of the stall.\n   - Wooden and metal structures are part of the stall's framework, holding up the crates and supporting the entire setup.\n\nThe overall appearance of the stall suggests a bustling market environment, optimized for quick sales and easy access to fresh produce. \n\n### Integrating Relevant Knowledge:\n\n**Market Dynamics**: Stalls like these are common in open-air markets or farmers' markets where producers directly sell their harvest. Such set-ups cater to local produce, offering fresh vegetables often harvested early in the morning. It reflects a farm-to-table approach, ensuring minimal transportation and fresher goods.\n\n**Nutritional Insight**: The vegetables displayed are rich in essential vitamins and minerals. For example:\n- **Bok Choy and Pak Choi**: Rich in vitamins A and C, calcium, and fiber.\n- **Chinese Broccoli (Kai-lan)**: Contains significant amounts of vitamins A, C, and K, as well as folate and fiber.\n- **Water Spinach (Kangkong)**: Known for high levels of vitamins A and C, iron, and potassium.\n\n### Questions and Answers Based on Description:\n\n#### Q1: What types of vegetables are prominently displayed in the image?\n- The image prominently displays bok choy, pak choi, Chinese broccoli (kai-lan), and water spinach (kangkong).\n\n#### Q2: How are the vegetables organized in the market stall?\n- The vegetables are organized in plastic crates and baskets, arranged in sorted rows to separate different types. They are bundled with rubber bands or ties to facilitate handling.\n\n#### Q3: What additional items are visible in the background of the stall?\n- The background includes stacks of other groceries like potatoes, carrots, radishes or turnips, and possibly small fruits, all stored in plastic bags or containers.\n\n#### Q4: What indications are there about the freshness of the vegetables?\n- The neat arrangement and the vibrant color of the vegetables suggest they are fresh. The market stall setup is typical of a farmer’s market, where produce is usually sold shortly after harvest, ensuring freshness.\n\nThis detailed description, combined with the integration of related knowledge, provides a comprehensive understanding of the image, catering to potential questions and offering insights into the market dynamics and nutritional value of the displayed vegetables."
+              "The image shows a market stall displaying an extensive assortment of fresh green vegetables. The vegetables are neatly arranged in an orderly fashion, occupying the entire space of the visible part of the stall. Let's break down the details:\n\n1. Types of Vegetables:\n   - Front Row: The most prominent vegetables appear to be green leafy ones, likely varieties of bok choy. Bok choy is identifiable by its distinct, rounded dark green leaves and thick white stalks.\n   - Middle Section: This section includes bunches of pak choi, which also have green leaves with smaller stalks. Next to these are bundles of Chinese broccoli (kai-lan), distinguishable by their darker, broader leaves.\n   - Back Section: The rear part of the stall exhibits bundles of what seem to be water spinach (kangkong), identifiable by its long, slender stems and narrow leaves.\n\n2. Containers and Display:\n   - The vegetables are placed in plastic crates and baskets, ensuring they are prominently displayed and accessible to customers. The crates are either white or deep red, which helps in keeping the vegetables separated and organized.\n   - Some vegetables are bundled together with rubber bands or ties, likely for easy purchase and handling.\n\n3. Surrounding Area:\n   - Behind the vegetables, there are stacks of other groceries such as potatoes, snacks, and possibly small fruits in plastic bags or containers.\n   - Additional non-leafy vegetables like carrots and what seem to be radishes or turnips are also visible in plastic bags or crates towards the back of the stall.\n   - Wooden and metal structures are part of the stall's framework, holding up the crates and supporting the entire setup.\n\nThe overall appearance of the stall suggests a bustling market environment, optimized for quick sales and easy access to fresh produce. \n\n Integrating Relevant Knowledge:\n\nMarket Dynamics: Stalls like these are common in open-air markets or farmers' markets where producers directly sell their harvest. Such set-ups cater to local produce, offering fresh vegetables often harvested early in the morning. It reflects a farm-to-table approach, ensuring minimal transportation and fresher goods.\n\nNutritional Insight: The vegetables displayed are rich in essential vitamins and minerals. For example:\n- Bok Choy and Pak Choi: Rich in vitamins A and C, calcium, and fiber.\n- Chinese Broccoli (Kai-lan): Contains significant amounts of vitamins A, C, and K, as well as folate and fiber.\n- Water Spinach (Kangkong): Known for high levels of vitamins A and C, iron, and potassium.\n\n Questions and Answers Based on Description:\n\n Q1: What types of vegetables are prominently displayed in the image?\n- The image prominently displays bok choy, pak choi, Chinese broccoli (kai-lan), and water spinach (kangkong).\n\n Q2: How are the vegetables organized in the market stall?\n- The vegetables are organized in plastic crates and baskets, arranged in sorted rows to separate different types. They are bundled with rubber bands or ties to facilitate handling.\n\n Q3: What additional items are visible in the background of the stall?\n- The background includes stacks of other groceries like potatoes, carrots, radishes or turnips, and possibly small fruits, all stored in plastic bags or containers.\n\n Q4: What indications are there about the freshness of the vegetables?\n- The neat arrangement and the vibrant color of the vegetables suggest they are fresh. The market stall setup is typical of a farmer’s market, where produce is usually sold shortly after harvest, ensuring freshness.\n\nThis detailed description, combined with the integration of related knowledge, provides a comprehensive understanding of the image, catering to potential questions and offering insights into the market dynamics and nutritional value of the displayed vegetables."
             ]
           ]
         },
@@ -598,7 +599,7 @@
             ["User", "", "images/examples/case_3.jpg"],
             ["User", "Write a detailed and comprehensive description of the image."],
             ["ShareGPT4o",
-              "This image depicts a serene outdoor setting featuring a prominent modern building alongside a body of water, possibly a river or lake, under clear skies with some clouds. The primary focus in the image is a tall, cylindrical residential or commercial building with multiple floors. The structure is modern in design, with a yellow and white color scheme. Large glass windows are uniformly distributed around each floor, and every floor appears to have a curved balcony, likely intended for residents or occupants to enjoy outdoor space and scenic views.\n\nAdjacent to this tall building is a shorter, rectangular building that appears to be residential or mixed-use, judging from its configuration with multiple balconies and windows. This secondary building has a simpler architecture compared to the central structure, with brownish color tones.\n\nIn the foreground, across the water, there is a green area with trees, showcasing the presence of natural elements near these urban structures. The trees are partially leafed, indicative of the spring season. The greenery along the waterfront is well-maintained, and there might be a promenade or walkpath along the water's edge, though it is not distinctly visible in this image.\n\nA few more scattered structures are visible in the background further to the right, adding to the urban context without overwhelming the scene. The background features more trees, blending urban development with nature. \n\nThe water body in the foreground is relatively calm, reflecting some of the sky and the buildings slightly. The sky above is blue with scattered light clouds, suggesting pleasant weather, likely on a mild day.\n\nIn summary:\n- Tall cylindrical building: Modern, yellow and white, glass windows, balconies on each floor.\n- Adjacent shorter building: Brownish, multiple floors, balconies, windows.\n- Foreground: Body of water, calm, reflecting sky and buildings.\n- Greenery: Trees, likely a promenade or walkpath along the waterfront.\n- Background: Additional buildings, trees indicate urban and natural blend.\n- Sky: Blue with light clouds, pleasant weather. \n\nThis detailed description forms the basis for understanding the image, enabling thorough answering of any related questions."
+              "The image displays a baked dessert, specifically a cherry clafoutis, which is placed on a frameless wire cooling rack to allow air circulation. The dessert is in a circular, clear glass baking dish. The glass dish allows easy observation of the consistency and the state of the baked item. The edge of the clafoutis is golden-brown and slightly puffed, suggesting a well-baked crust. The center of the dessert is filled with whole cherries, which are dark red and appear juicy, embedded in a custard-like batter. There is a light dusting of powdered sugar on the cherries and the surface of the clafoutis, enhancing its visual appeal. \n\nA hand with red nail polish on the thumb is seen holding a fine-mesh sifter filled with powdered sugar over the dessert, sprinkling additional sugar. The act of sifting the powdered sugar over the dessert helps to create an even coating and adds a sweet, decorative finish. \n\nThe background is a light grey, textured surface, which contrasts with the vibrant colors of the cherry clafoutis. The overall presentation suggests that the dessert is ready to be served, and the addition of the powdered sugar gives a final touch to the dish.\n\nIntegrating relevant knowledge, a cherry clafoutis is a traditional French dessert originating from the Limousin region. It is made by placing cherries in a buttered dish, covering them with a thick, pancake-like batter, and then baking it until set. Cherries are typically used with pits in classic recipes, as they impart a stronger almond-like flavor during baking. However, for convenience and safety, pitted cherries are often used in modern variations. The custard batter, which becomes firm and flan-like upon baking, contrasts pleasantly with the tart sweetness of the cherries. The dusting of powdered sugar not only enhances the sweetness but also gives it a pleasing aesthetic finish.\n\nIn conclusion, the image captures the final preparation stage of a cherry clafoutis, with an emphasis on the texture, color contrast, and the process of adding the final sweet touch through powdered sugar. The visual elements collectively highlight the dessert's appeal and readiness for serving."
             ]
           ]
         },
