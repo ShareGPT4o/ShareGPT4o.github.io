@@ -422,46 +422,67 @@
 
     <section class="section" id="ShareGPT-4o-version">
       <div class="columns is-centered has-text-centered">
-        <div class="column is-six-fifths">
-          <h2 class="title is-3"><img id="logo" width="3%" src="images/logo.jpg"> ShareGPT-4o-Version</h2>
+        <div class="column is-half">
+          <h2 class="title is-3">
+            <img id="logo" width="50" src="images/logo.jpg" style="vertical-align: middle; margin-right: 10px;"> ShareGPT-4o-Version
+          </h2>
         </div>
       </div>
-      <div class="container is-max-desktop">
+      <div class="container">
         <div class="columns is-centered">
-          <div class="column is-full-width">
-            <div class="content has-text-justified">
+          <div class="column is-three-quarters">
+            <div class="content">
               <style>
-                table.GeneratedTable {
+                .GeneratedTable {
                   width: 100%;
-                  background-color: #ffffff;
+                  background-color: #f9f9f9;
                   border-collapse: collapse;
-                  border-width: 2px;
-                  border-color: #c1c4c5;
-                  border-style: solid;
-                  color: #000000;
                   margin-bottom: 20px;
+                  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+                  border-radius: 8px;
+                  overflow: hidden;
                 }
-                
-                table.GeneratedTable td, table.GeneratedTable th {
-                  border-width: 2px;
-                  border-color: #9b9d9e;
-                  border-style: solid;
-                  padding: 10px;
+    
+                .GeneratedTable th, .GeneratedTable td {
+                  border: 1px solid #ddd;
+                  padding: 12px;
+                  text-align: left;
                 }
-                
-                table.GeneratedTable thead {
-                  background-color: #6691ee;
+    
+                .GeneratedTable thead {
+                  background-color: #4CAF50;
                   color: white;
                 }
-                
+    
+                .checkbox-completed {
+                  color: green;
+                  font-weight: bold;
+                }
+    
+                .checkbox-pending {
+                  color: orange;
+                  font-weight: bold;
+                }
+    
                 .table-container {
+                  margin: 20px 0;
+                }
+    
+                h3.title {
+                  margin-top: 40px;
                   margin-bottom: 20px;
                 }
+    
+                a.dataset-link {
+                  text-decoration: underline;
+                  color: inherit;
+                  font-weight: bold;
+                }
               </style>
-              <div class="column is-six-fifths" width="80%">
+              <div>
                 <h3 class="title is-4 has-text-centered">
-                  <a href="https://huggingface.co/datasets/OpenGVLab/ShareGPT-4o" target="_blank" style="text-decoration: underline; color: inherit;">ShareGPT-4o_v1.0</a>
-                </h3>                
+                  <a class="dataset-link" href="https://huggingface.co/datasets/OpenGVLab/ShareGPT-4o" target="_blank">ShareGPT-4o_v1.0</a>
+                </h3>
                 <div class="table-container">
                   <table class="GeneratedTable">
                     <thead>
@@ -514,9 +535,7 @@
                     </tbody>
                   </table>
                 </div>
-                <h3 class="title is-4 has-text-centered">
-                  Schedule
-                </h3>
+                <h3 class="title is-4 has-text-centered">Schedule</h3>
                 <div class="table-container">
                   <table class="GeneratedTable">
                     <tbody>
@@ -545,6 +564,7 @@
         </div>
       </div>
     </section>
+    
     
 
 <!--
