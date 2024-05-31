@@ -338,83 +338,70 @@
                   border-style: solid;
                   color: #000000;
                 }
-    
+                
                 table.GeneratedTable td, table.GeneratedTable th {
                   border-width: 2px;
                   border-color: #9b9d9e;
                   border-style: solid;
                   padding: 3px;
                 }
-    
+                
                 table.GeneratedTable thead {
                   background-color: #6691ee;
                 }
-    
-                table.GeneratedTable tbody tr:nth-child(even) {
-                  background-color: rgba(117, 209, 215, 0.1);
-                }
-    
-                table.GeneratedTable tbody tr:last-child {
-                  background-color: rgb(255,248,227);
-                  font-weight: bold;
-                }
-    
-                table.GeneratedTable tbody tr:last-child td {
-                  color: #224baf;
-                }
               </style>
               <div class="column is-six-fifths" width="80%">
-                <table class="GeneratedTable">
-                  <thead>
-                    <tr>
-                      <th>Dataset Name</th>
-                      <th>Domain</th>
-                      <th>Visible</th>
-                      <th>Captioned by</th>
-                      <th>Samples</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>COCO-Caption</td>
-                      <td>Image</td>
-                      <td>✔︎</td>
-                      <td>Human</td>
-                      <td>118K</td>
-                    </tr>
-                    <tr>
-                      <td>BLIP-LCS</td>
-                      <td>Image</td>
-                      <td>✔︎</td>
-                      <td>BLIP</td>
-                      <td>558K</td>
-                    </tr>
-                    <tr>
-                      <td>LLaVA-23K</td>
-                      <td>Image</td>
-                      <td>✗</td>
-                      <td>GPT4</td>
-                      <td>23K</td>
-                    </tr>
-                    <tr>
-                      <td>ShareGPT4V</td>
-                      <td>Image</td>
-                      <td>✔︎</td>
-                      <td>GPT4-Vision</td>
-                      <td>100K</td>
-                    </tr>
-                    <tr>
-                      <td>ShareGPT-4o</td>
-                      <td>Image, Video, Audio(coming soon)</td>
-                      <td>✔︎</td>
-                      <td>GPT-4o</td>
-                      <td>200k+10k+10k</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <p style="font-family: Times New Roman; font-size: 1.25em; text-align: center;">
-                  <b>Comparison of widely-used caption datasets and ShareGPT-4o.</b>
-                </p>
+              <table class="GeneratedTable">
+                <thead>
+                  <tr>
+                    <th>Dataset Name</th>
+                    <th>Domain</th>
+                    <th>Visible</th>
+                    <th>Captioned by</th>
+                    <th>Samples</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>COCO-Caption</td>
+                    <td>Image</td>
+                    <td>✔︎</td>
+                    <td>Human</td>
+                    <td>118K</td>
+                  </tr>
+                  <tr>
+                    <td>BLIP-LCS</td>
+                    <td>Image</td>
+                    <td>✔︎</td>
+                    <td>BLIP</td>
+                    <td>558K</td>
+                  </tr>
+                  <tr>
+                    <td>LLaVA-23K</td>
+                    <td>Image</td>
+                    <td>✗</td>
+                    <td>GPT4</td>
+                    <td>23K</td>
+                  </tr>
+                  <tr>
+                    <td>ShareGPT4V</td>
+                    <td>Image</td>
+                    <td>✔︎</td>
+                    <td>GPT4-Vision</td>
+                    <td>100K</td>
+                  </tr>
+                  <tr bgcolor="#a4cff4">
+                    <td>ShareGPT-4o</td>
+                    <td>Image, Video, Audio(coming soon)</td>
+                    <td>✔︎</td>
+                    <td>GPT-4o</td>
+                    <td>200k+10k+10k</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p style="font-family: Times New Roman; font-size: 1.25em; text-align: center;">
+                <b>Comparison of widely-used caption datasets and ShareGPT-4o.</b>
+              </p>            
               </div>
               <font color="#224baf" size=4><b>
               <p>
@@ -422,7 +409,7 @@
                 Then, we customize prompts and utilize GPT-4o's powerful multimodal capabilities to annotate them with captions, ultimately resulting in a high-quality multimodal dataset.
                 <centering>
                   <div style="text-align: center;">
-                    <img id="teaser" width="100%" src="images/sharegpt-4o.gif">
+                    <img id="teaser" width="100%" src="images/sharegpt-4o.gif">     
                   </div>
                 </centering>
               </p>
